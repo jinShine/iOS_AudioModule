@@ -11,6 +11,7 @@
 		5C9042A723E406CC00BBCB26 /* Intro.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 5CE893E723E2D5CD00C60E8D /* Intro.mp4 */; };
 		5C9042A923E42D9900BBCB26 /* SampleMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5C9042A823E42D9800BBCB26 /* SampleMusic.mp3 */; };
 		5C9042CB23E9099600BBCB26 /* String+TimeFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9042CA23E9099600BBCB26 /* String+TimeFormatter.swift */; };
+		5C9042D223E9751C00BBCB26 /* AVAudioRecoderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9042D123E9751C00BBCB26 /* AVAudioRecoderViewController.swift */; };
 		5CE893D423E2D41000C60E8D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE893D323E2D41000C60E8D /* AppDelegate.swift */; };
 		5CE893D823E2D41000C60E8D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE893D723E2D41000C60E8D /* ViewController.swift */; };
 		5CE893DB23E2D41000C60E8D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CE893D923E2D41000C60E8D /* Main.storyboard */; };
@@ -22,6 +23,7 @@
 		5C858E5A23E3D515000AA6E9 /* AudioPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerViewController.swift; sourceTree = "<group>"; };
 		5C9042A823E42D9800BBCB26 /* SampleMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = SampleMusic.mp3; sourceTree = "<group>"; };
 		5C9042CA23E9099600BBCB26 /* String+TimeFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+TimeFormatter.swift"; sourceTree = "<group>"; };
+		5C9042D123E9751C00BBCB26 /* AVAudioRecoderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVAudioRecoderViewController.swift; sourceTree = "<group>"; };
 		5CE893D023E2D41000C60E8D /* AudioModule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudioModule.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CE893D323E2D41000C60E8D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5CE893D723E2D41000C60E8D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,7 +49,8 @@
 			isa = PBXGroup;
 			children = (
 				5CE893D723E2D41000C60E8D /* ViewController.swift */,
-				5C858E5A23E3D515000AA6E9 /* AudioPlayerViewController.swift */,
+				5C9042CF23E974EC00BBCB26 /* AVAudioPlayer */,
+				5C9042D023E974F600BBCB26 /* AVAudioRecoder */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -70,6 +73,22 @@
 				5C9042CA23E9099600BBCB26 /* String+TimeFormatter.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		5C9042CF23E974EC00BBCB26 /* AVAudioPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				5C858E5A23E3D515000AA6E9 /* AudioPlayerViewController.swift */,
+			);
+			path = AVAudioPlayer;
+			sourceTree = "<group>";
+		};
+		5C9042D023E974F600BBCB26 /* AVAudioRecoder */ = {
+			isa = PBXGroup;
+			children = (
+				5C9042D123E9751C00BBCB26 /* AVAudioRecoderViewController.swift */,
+			);
+			path = AVAudioRecoder;
 			sourceTree = "<group>";
 		};
 		5CE893C723E2D41000C60E8D = {
@@ -175,6 +194,7 @@
 			files = (
 				5CE893D823E2D41000C60E8D /* ViewController.swift in Sources */,
 				5CE893D423E2D41000C60E8D /* AppDelegate.swift in Sources */,
+				5C9042D223E9751C00BBCB26 /* AVAudioRecoderViewController.swift in Sources */,
 				5C9042CB23E9099600BBCB26 /* String+TimeFormatter.swift in Sources */,
 				5C858E5B23E3D515000AA6E9 /* AudioPlayerViewController.swift in Sources */,
 			);

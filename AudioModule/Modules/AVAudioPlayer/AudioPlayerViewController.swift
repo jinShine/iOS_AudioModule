@@ -51,8 +51,10 @@ class AudioPlayerViewController: UIViewController {
   }
 
   private func configureAudioPlayer() {
+    // Song 1
     audioFileURL = Bundle.main.url(forResource: "Intro", withExtension: "mp4")
-//    audioFileURL = Bundle.main.url(forResource: "SampleMusic", withExtension: "mp3")
+    // Song 2
+    //audioFileURL = Bundle.main.url(forResource: "SampleMusic", withExtension: "mp3")
 
     player.delegate = self
     player.enableRate = true // rate 조절 가능 옵션

@@ -26,8 +26,8 @@ class ViewController: UIViewController {
 
   private func configureTableView() {
     tableView.dataSource = self
+    tableView.delegate = self
   }
-
 }
 
 extension ViewController: UITableViewDataSource {
@@ -52,3 +52,9 @@ extension ViewController: UITableViewDataSource {
 
 }
 
+extension ViewController: UITableViewDelegate {
+
+  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    performSegue(withIdentifier: items[indexPath.section][indexPath.row], sender: nil)
+  }
+}

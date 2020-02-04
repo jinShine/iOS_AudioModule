@@ -27,9 +27,6 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="9Wz-ua-N30" kind="show" identifier="AVAudioPlayer" id="rW4-G5-Ng6"/>
-                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -46,11 +43,29 @@
                     <navigationItem key="navigationItem" id="Ja2-YP-LxV"/>
                     <connections>
                         <outlet property="tableView" destination="wkN-i7-zIu" id="1SC-fn-bDL"/>
+                        <segue destination="9Wz-ua-N30" kind="show" identifier="AVAudioPlayer" id="Gl5-rM-OMN"/>
+                        <segue destination="sdx-hP-WOR" kind="show" identifier="AVAudioRecoder" id="7ep-lu-Pll"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="138.61607142857142"/>
+        </scene>
+        <!--Audio Recoder View Controller-->
+        <scene sceneID="lpz-Zh-Yhc">
+            <objects>
+                <viewController id="sdx-hP-WOR" customClass="AVAudioRecoderViewController" customModule="AudioModule" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="944-8f-mgD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="pB8-Jk-2W4"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="fFl-Cb-DvQ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S6n-TP-DSE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2214" y="450"/>
         </scene>
         <!--Audio Player View Controller-->
         <scene sceneID="YwI-lv-Azp">
