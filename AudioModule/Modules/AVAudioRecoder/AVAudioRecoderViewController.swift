@@ -7,24 +7,43 @@
 //
 
 import UIKit
+import AVFoundation
 
 class AVAudioRecoderViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+  //MARK:- Outlets
+  @IBOutlet private var stopButton: UIButton!
+  @IBOutlet private var playButton: UIButton!
+  @IBOutlet private var recordButton: UIButton!
+  @IBOutlet private var timeLabel: UILabel!
 
-        // Do any additional setup after loading the view.
-    }
-    
+  override func viewDidLoad() {
+    super.viewDidLoad()
 
-    /*
-    // MARK: - Navigation
+    // Do any additional setup after loading the view.
+  }
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+  override func didReceiveMemoryWarning() {
+    super.didReceiveMemoryWarning()
+    // Dispose of any resources that can be recreated.
+  }
+
+
+}
+
+// MARK: - Actions
+extension AVAudioRecoderViewController {
+
+  @IBAction func stop(sender: UIButton) {
+
+  }
+
+  @IBAction func play(sender: UIButton) {
+
+  }
+
+  @IBAction func record(sender: UIButton) {
+
+  }
 
 }

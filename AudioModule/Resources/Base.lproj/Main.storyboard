@@ -58,14 +58,75 @@
                     <view key="view" contentMode="scaleToFill" id="944-8f-mgD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="oxW-DK-MMo">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="UWN-I2-vfW">
+                                <rect key="frame" x="12" y="188" width="390" height="229"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zhx-MB-FJQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="137"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="100"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Wave" translatesAutoresizingMaskIntoConstraints="NO" id="PiD-Os-eqr">
+                                        <rect key="frame" x="0.0" y="137" width="390" height="92"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1NX-xf-VzF">
+                                <rect key="frame" x="172" y="732" width="70" height="70"/>
+                                <state key="normal" image="Record_Round"/>
+                                <connections>
+                                    <action selector="recordWithSender:" destination="sdx-hP-WOR" eventType="touchUpInside" id="7hW-mR-cXU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Drw-v1-WFL">
+                                <rect key="frame" x="96" y="742" width="50" height="50"/>
+                                <state key="normal" image="Play_Round"/>
+                                <connections>
+                                    <action selector="playWithSender:" destination="sdx-hP-WOR" eventType="touchUpInside" id="jdu-O6-sSg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="edd-Ps-we1">
+                                <rect key="frame" x="268" y="742" width="50" height="50"/>
+                                <state key="normal" image="Stop_Round"/>
+                                <connections>
+                                    <action selector="stopWithSender:" destination="sdx-hP-WOR" eventType="touchUpInside" id="ec4-Qg-ll9"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="oxW-DK-MMo" firstAttribute="top" secondItem="pB8-Jk-2W4" secondAttribute="top" id="Cri-W5-SIE"/>
+                            <constraint firstItem="oxW-DK-MMo" firstAttribute="leading" secondItem="pB8-Jk-2W4" secondAttribute="leading" id="G7i-2Z-5JN"/>
+                            <constraint firstItem="edd-Ps-we1" firstAttribute="leading" secondItem="1NX-xf-VzF" secondAttribute="trailing" constant="26" id="IvS-hg-sGW"/>
+                            <constraint firstAttribute="bottom" secondItem="oxW-DK-MMo" secondAttribute="bottom" id="L5a-dz-ZoJ"/>
+                            <constraint firstItem="UWN-I2-vfW" firstAttribute="leading" secondItem="pB8-Jk-2W4" secondAttribute="leading" constant="12" id="W3t-ZD-lwW"/>
+                            <constraint firstItem="oxW-DK-MMo" firstAttribute="trailing" secondItem="pB8-Jk-2W4" secondAttribute="trailing" id="ZDz-2j-jqH"/>
+                            <constraint firstItem="1NX-xf-VzF" firstAttribute="leading" secondItem="Drw-v1-WFL" secondAttribute="trailing" constant="26" id="ggW-Ow-1wq"/>
+                            <constraint firstItem="pB8-Jk-2W4" firstAttribute="bottom" secondItem="1NX-xf-VzF" secondAttribute="bottom" constant="60" id="igd-SP-drf"/>
+                            <constraint firstItem="1NX-xf-VzF" firstAttribute="centerY" secondItem="Drw-v1-WFL" secondAttribute="centerY" id="m5i-Wj-Adj"/>
+                            <constraint firstItem="pB8-Jk-2W4" firstAttribute="trailing" secondItem="UWN-I2-vfW" secondAttribute="trailing" constant="12" id="mUp-Sw-wyJ"/>
+                            <constraint firstItem="edd-Ps-we1" firstAttribute="centerY" secondItem="1NX-xf-VzF" secondAttribute="centerY" id="sb8-U5-pUX"/>
+                            <constraint firstItem="UWN-I2-vfW" firstAttribute="top" secondItem="pB8-Jk-2W4" secondAttribute="top" constant="100" id="vMD-a5-Yi7"/>
+                            <constraint firstItem="1NX-xf-VzF" firstAttribute="centerX" secondItem="944-8f-mgD" secondAttribute="centerX" id="x4L-Mb-hfG"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="pB8-Jk-2W4"/>
                     </view>
                     <navigationItem key="navigationItem" id="fFl-Cb-DvQ"/>
+                    <connections>
+                        <outlet property="playButton" destination="Drw-v1-WFL" id="4Ce-NW-rGc"/>
+                        <outlet property="recordButton" destination="1NX-xf-VzF" id="jLA-zC-N6B"/>
+                        <outlet property="stopButton" destination="edd-Ps-we1" id="MXS-GH-YH7"/>
+                        <outlet property="timeLabel" destination="zhx-MB-FJQ" id="GMG-jl-Le8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S6n-TP-DSE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2214" y="450"/>
+            <point key="canvasLocation" x="2213.04347826087" y="450"/>
         </scene>
         <!--Audio Player View Controller-->
         <scene sceneID="YwI-lv-Azp">
@@ -183,7 +244,12 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Background" width="375" height="667"/>
         <image name="IU" width="1000" height="1000"/>
+        <image name="Play_Round" width="50" height="50"/>
+        <image name="Record_Round" width="70" height="70"/>
+        <image name="Stop_Round" width="50" height="50"/>
+        <image name="Wave" width="318" height="92"/>
         <image name="pause" width="24" height="24"/>
         <image name="play" width="24" height="24"/>
     </resources>
